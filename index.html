@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iCMR</title>
+
+
+  <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/scrollbar.css">
+  <link rel="stylesheet" href="css/querryHome.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="mobile-navbar ">
+        <div class="mobile-navbar__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="tabler-icon tabler-icon-x">
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </div>
+        <ul class="mobile-navbar__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/services.html"><fontsninja-text id="fontsninja-text-12"
+                class="fontsninja-family-1933">Services</fontsninja-text></a></li>
+          <li><a href="pages/about.html"><fontsninja-text id="fontsninja-text-14"
+                class="fontsninja-family-1933">About</fontsninja-text></a></li>
+          <li><a href="pages/contact.html"><fontsninja-text id="fontsninja-text-16"
+                class="fontsninja-family-1933">Contact</fontsninja-text></a></li>
+      </div>
+      <div class="navbar">
+        <div class="navbar-img">
+          <a href="#"><img src="images/logo/logo (4).png" alt="" /></a>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="navbar-buttons">
+          <a class="navbar-buttons-sign-in" href="#">Sign-In</a>
+          <a class="navbar-buttons-register" href="#">Register</a>
+        </div>
+        <div class="mobile-hamb">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="tabler-icon tabler-icon-menu-2">
+            <path d="M4 6l16 0"></path>
+            <path d="M4 12l16 0"></path>
+            <path d="M4 18l16 0"></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container">
+        <img class="bg-shape" src="images/hero/hero-bg.png" alt="" />
+        <div class="hero-content">
+          <div class="hero-content-text">
+            <h5 style="color: #ff1e00;">CLINICAL MANAGEMENT SYSTEM</h5>
+            <h1>Get online <span>appointments</span> from home.</h1>
+            <p>
+              Your healthcare, your schedule. Easy appointments, instant access, expert care, and much more.
+            </p>
+            <div class="hero-content-text-btns">
+              <a class="hero-content-text-btns-book-ride" href="#">Appointment &nbsp;<i
+                  class="fa-regular fa-circle-check"></i></a>
+              <a class="hero-content-text-btns-learn-more" href="#learn">Learn More &nbsp; <i
+                  class="fa-solid fa-angle-right"></i></a>
+            </div>
+          </div>
+          <img class="hero-content-car-img" src="images/hero/main-car.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="booking-section" class="book-section">
+      <div class="modal-overlay"></div>
+      <div class="container">
+        <div class="book-content">
+          <div class="book-content-box">
+            <h2>Book an Appointment</h2>
+            <p class="error-message">All fields required!</p>
+            <p class="booking-done">Check your email to confirm an order.</p>
+            <form class="box-form">
+              <div class="box-form-car-type">
+                <label for="fname"> <i class="fa-solid fa-signature"></i> First Name: <b>*</b></label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+              </div>
+              <div class="box-form-car-type">
+                <label for="lname"> <i class="fa-solid fa-signature"></i> Last Name: <b>*</b></label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+              </div>
+              <div class="box-form-car-type">
+                <label for="mail"> <i class="fa-solid fa-envelope"></i> Email: <b>*</b></label>
+                <input type="email" name="mail" id="mail" placeholder="Enter your email ID">
+              </div>
+              <div class="box-form-car-type">
+                <label for="num"> <i class="fa-solid fa-phone"></i> Mobile No: <b>*</b></label>
+                <input type="number" name="num" id="num" placeholder="Enter your mobile number">
+              </div>
+              <div class="box-form-car-time">
+                <label for="picktime"><i class="fa-solid fa-cake-candles"></i> Date of Birth: <b>*</b></label>
+                <input type="date" id="picktime" />
+              </div>
+              <div class="box-form-car-time">
+                <label for="sex"><i class="fa-solid fa-venus-mars"></i> Gender: <b>*</b></label>
+                <select name="sex" id="sex" >
+                  <option value="male">Select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <div class="box-form-car-time">
+                <label for="apdate"><i class="fa-regular fa-calendar-days"></i> Appointment Date: <b>*</b></label>
+                <input type="date" id="apdate" />
+              </div>
+              <div class="box-form-car-time">
+                <label for="aptime"><i class="fa-solid fa-clock"></i> Appointment Time: <b>*</b></label>
+                <input type="time" value="00:00" d="aptime" />
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plan-section" id="learn">
+      <div class="container">
+        <div class="plan-container">
+          <div class="plan-container-title">
+            <h3>Get your Appointment</h3>
+            <h2>Quick & easy application</h2>
+          </div>
+          <div class="plan-container-boxes">
+            <div class="plan-container-boxes-box">
+              <img src="images/plan/onl.png" />
+              <h3>Appointment Booking</h3>
+              <p>
+                Easily schedule appointments with your preferred doctors through a user-friendly interface, ensuring convenience and efficiency.
+              </p>
+            </div>
+            <div class="plan-container-boxes-box">
+              <img src="images/plan/icon2.png" />
+              <h3>Customer Support</h3>
+              <p>
+                Receive prompt assistance from our dedicated team, ensuring all your queries and concerns are addressed swiftly and effectively.
+              </p>
+            </div>
+            <div class="plan-container-boxes-box">
+              <img src="images/plan/rem.png" />
+              <h3>Reminders</h3>
+              <p>
+                Receive timely reminders for upcoming appointments, ensuring you never miss a visit and promoting better healthcare management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner-section">
+      <div class="container">
+        <div class="banner-content">
+          <div class="banner-content-text">
+            <h2>Save Time and Hassle with Easy Appointment Booking!</h2>
+            <p>Top Clinics. Trusted Providers. <span>24/7 </span>Assistance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="choose-section">
+      <div class="container">
+        <div class="choose-container">
+          <img class="choose-container__img" src="images/chooseUs/main.png">
+          <div class="text-container">
+            <div class="text-container-left">
+              <h4>Why Choose Us</h4>
+              <h2>Unbeatable Value for Your Health Needs</h2>
+              <p>Experience the ultimate in value with our unmatched offers. At our clinic management website, we're committed to delivering exceptional value for your health investment, ensuring you receive top-notch services and care without straining your budget. Our deals are tailored to elevate your healthcare experience, so seize the opportunity to prioritize your well-being without compromising on quality.</p>
+              <a href="#home">Find Details &nbsp; <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="text-container-right">
+              <div class="text-container-right">
+                <div class="text-container-right-box">
+                  <img src="images/chooseUs/icon1.png">
+                  <div class="text-container-right-box-text">
+                    <h4>Cross-Country Consultations</h4>
+                    <p>Elevate your healthcare journey with seamless online appointments for consultations across regions.</p>
+                  </div>
+                </div>
+                <div class="text-container-right-box">
+                  <img src="images/chooseUs/icon2.png">
+                  <div class="text-container-right-box-text">
+                    <h4>Transparent Pricing</h4>
+                    <p>Access everything you need in one clear, comprehensive price with our transparent pricing policy.</p>
+                  </div>
+                </div>
+                <div class="text-container-right-box">
+                  <img src="images/chooseUs/icon3.png">
+                  <div class="text-container-right-box-text">
+                    <h4>No Surprise Fees
+                    </h4>
+                    <p>Experience peace of mind with our commitment to upfront, transparent pricing. We believe in honesty and clarity in every transaction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="testimonials-content">
+          <div class="testimonials-content-title">
+            <h4>Reviewed by People</h4>
+            <h2>Explore testimonials</h2>
+            <p>Witness the profound impact we've had on our clients through their heartfelt testimonials. Our clients have embraced our services and witnessed remarkable results, and they're enthusiastic about sharing their uplifting experiences with you.</p>
+          </div>
+          <div class="all-testimonials">
+            <div class="all-testimonials-box">
+              <span class="quotes-icon"><i class="fa-solid fa-quote-right"></i></span>
+              <p>We booked an appointment through this clinical website and had an outstanding experience! The process was effortless, and the service fees were incredibly reasonable.</p>
+              <div class="all-testimonials-box-name">
+                <div class="all-testimonials-box-name-profile">
+                  <img src="images/teste/pfp1.jpg">
+                  <span>
+                    <h4>Ranit Deria</h4>
+                    <p>Chittaranjan</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="all-testimonials-box box-2">
+              <span class="quotes-icon"><i class="fa-solid fa-quote-right"></i></span>
+              <p>I'm incredibly impressed with the efficiency of this clinical website. Booking my appointment was a breeze, and the affordability of the services exceeded my expectations.</p>
+              <div class="all-testimonials-box-name">
+                <div class="all-testimonials-box-name-profile">
+                  <img src="images/teste/pfp2.jpg">
+                  <span>
+                    <h4>Patel Vivek</h4>
+                    <p>Mumbai</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-content">
+          <div class="faq-content-title">
+            <h5>FAQ</h5>
+            <h2>Frequently Asked Questions</h2>
+            <p>Frequently Asked Questions About Appointment Booking on Our Website: Solutions to Common Queries and Concerns Regarding Your Healthcare Journey.</p>
+          </div>
+          <div class="all-questions">
+            <div class="faq-box">
+              <div id="q1" class="faq-box-question">
+                <p>1. What makes comparing healthcare service options beneficial?</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div id="q1" class="faq-box-answer">
+                Comparing healthcare service options is crucial as it enables you to find the best fit for your needs and budget, ensuring optimal value for your investment. By evaluating different providers, you can discover services that offer competitive pricing, additional benefits, or specialized treatments. You can explore healthcare service options by conducting online research and comparing offerings from various clinics and practitioners.
+              </div>
+            </div>
+            <div class="faq-box">
+              <div id="q2" class="faq-box-question">
+                <p>2. How can I explore available healthcare service options?</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div id="q2" class="faq-box-answer">
+                You can explore available healthcare service options by conducting online research and comparing offerings from different clinics and practitioners. Platforms such as our website provide comprehensive listings and allow you to compare services and prices. Additionally, subscribing to newsletters and following healthcare providers on social media can keep you informed about special offers and new services.
+              </div>
+            </div>
+            <div class="faq-box">
+              <div id="q3" class="faq-box-question">
+                <p>3. How can I access affordable healthcare services?</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div id="q3" class="faq-box-answer">
+                Plan ahead: Scheduling your healthcare appointments in advance can often lead to more affordable rates. Compare offerings: Utilize our website or similar platforms to compare services and prices from multiple healthcare providers. Seek discounts: Look for promotional codes and discounts that can help reduce the cost of services. Opting for clinics located away from city centers may also offer more budget-friendly options.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <ul class="footer-content-1">
+            <li><span>ICMR</span>Clinical Management</li>
+            <li>We offer a wide range of services to meet all your healthcare needs. From consultations to treatments, we have the perfect solution for you.</li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> &nbsp; (+91) 9876543219</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; testmail@gmail.com</a></li>
+            <li><a href="https://bit.ly/reyranit" style="font-size: 14px;">Design by RanitDERIA</a></li>
+          </ul>
+          <ul class="footer-content-2">
+            <li>privacy policy</li>
+            <li>We prioritize the security and confidentiality of your personal information, adhering to strict data protection protocols to safeguard your privacy.</a></li>
+            <li><span class="ud"><b>Updated: </b><i>20.03.24</i></span></li>
+          </ul>
+          <ul class="footer-content-2">
+            <li>WORKING HOURS</li>
+            <li>Mon - Fri: 9:00AM - 9:00PM</li>
+            <li>Sat: 9:00AM - 19:00PM</li>
+            <li>Sun: Closed</li>
+          </ul>
+          <ul class="footer-content-2">
+            <li>SUBSCRIPTION</li>
+            <li>
+              <p>Subscribe your Email address for latest news &amp; updates.</p>
+            </li>
+            <li><input type="email" placeholder="Enter Email Address"></li>
+            <li><button class="submit-email">Submit</button></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/ca4923168d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
