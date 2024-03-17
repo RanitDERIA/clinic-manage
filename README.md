@@ -12,7 +12,7 @@
 
   <h2 align="center">ICMR - Clinical Management</h2>
 
-  ICMR -  is a clinical management website, <br />Responsive for all devices, built using <br />HTML and CSS.
+  ICMR -  is a clinical management website, <br />Responsive for all devices, built using <br />HTML, CSS and JavaScript.
 
   <a href="https://ranitderia.github.io/clinic-manage/"><strong>➥ Live Demo</strong></a>
 
